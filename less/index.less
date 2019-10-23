@@ -150,7 +150,7 @@ header{
 	margin: 0 auto;
 	padding: 2%;
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-between;
 
 	h3{
 		margin-bottom: 2%;
@@ -181,6 +181,51 @@ header{
 	} //end boxes
 } // end info
 
+.history{
+	width: 91%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
 
+	h3{
+		padding-left: 2%;
+	}
 
+	table{
+		padding: 2%;
+		margin-top: 2%;
+
+		tr:nth-child(even){
+			background-color: lightgray;
+		} //end tr:nth
+
+		tr{
+			font-size: 2rem;
+
+			td, th{
+				padding: 2% 1%;
+				text-align: center;
+			}
+
+			th{
+				font-weight: bold;
+			} //end th
+
+		} //end tr
+	} //end table
+} // end history
+
+footer{
+	width: 91%;
+	margin: 5% auto 0 auto;
+	text-align: center;
+	padding: 3%;
+	background-color: gray;
+
+	p{
+		color: #eee;
+	}
+	
+
+}// end footer
 
