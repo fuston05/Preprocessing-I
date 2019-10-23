@@ -50,10 +50,137 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+	border: 1px solid #666;
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+	font-size: 62.5%;
 }
+
+// ////////// variables ///////////
+
+@fontColor: darkgray;
+@aHoverColor: lightgray;
+
+//  //////// fonts /////////////////
+p{
+	font-size: 2rem;
+	color: #666;
+}
+
+h1{
+	font-size: 6rem;
+	padding: 1%;
+}
+
+h2, h3, h4{
+	font-size: 3rem;
+	padding: 1%;
+}
+
+// ////////////////////////////////
+
+header{
+	padding-top: 2%;
+	width: 95%;
+	display: flex;
+	justify-content: flex-end;
+
+	nav{
+		width: 40%;
+		display: flex;
+		justify-content: space-evenly;
+
+		a{
+			text-decoration: none;
+			padding: 10px;
+			font-size: 2rem;
+			color: @fontColor;
+		}// end a
+
+		a:hover{
+			color: @aHoverColor;
+		}
+	}// end nav
+}// end header
+
+.intro{
+	padding: 2%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+
+	.introCont{
+		padding: 5% 2% 3% 2%;
+		width: 95%;
+		margin: 0 auto;
+		background-color: lightgray;
+		border-radius: 5px;
+
+		div:first-child{
+			padding-bottom: 5%;
+			border-bottom: 1px solid #333;
+
+			img{
+				width: 30%;
+			} //end img
+
+		} // end div first-child
+
+		div:nth-child(2){
+			padding: 5% 2%;
+
+			button{
+				font-size: 3rem;
+				margin: 2% 0 0 0;
+				padding: 1% 3%;
+				border-radius: 5px;
+				color: #eee;
+				background-color: darkgray;
+			} // end button
+		} //end nth-child
+
+	} // end introCont
+} //end intro
+
+.info{
+	width: 91%;
+	margin: 0 auto;
+	padding: 2%;
+	display: flex;
+	justify-content: space-evenly;
+
+	h3{
+		margin-bottom: 2%;
+	}
+
+	.text{
+		display: flex;
+		flex-direction: column;
+		width: 45%;
+	} //end text
+
+	.boxes{
+		width: 44%;
+		display: flex;
+		flex-direction: column;
+
+		li:first-child{
+			border-top: 1px solid #999;
+		}
+
+		li{
+			font-size: 2rem;
+			padding: 3%;
+			border-bottom: 1px solid #999;
+			color: @fontColor;
+		}
+
+	} //end boxes
+} // end info
+
+
+
 
