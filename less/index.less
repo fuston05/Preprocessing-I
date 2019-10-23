@@ -51,7 +51,6 @@ table {
 /* Set every element's box-sizing to border-box */
 * {
 	box-sizing: border-box;
-	border: 1px solid #666;
 }
 
 html, body {
@@ -94,19 +93,20 @@ h2, h3, h4{
 
 header{
 	padding-top: 2%;
-	width: 91%;
+	max-width: 91%;
 	display: flex;
 	justify-content: flex-end;
 
 	nav{
-		width: 40%;
-		.flexBetween();
+		display: flex;
+		justify-content: flex-end;
+		width: 70%;
 
 		a{
 			text-decoration: none;
-			padding: 2% 0;
+			padding: 2% 5%;
+			margin-left: 5%;
 			font-size: 2rem;
-			margin-left: 2%;
 			color: @fontColor;
 		}// end a
 
@@ -219,6 +219,34 @@ header{
 		} //end tr
 	} //end table
 } // end history
+
+.contact{
+	.flexCol();
+	width: 91%;
+	margin: 5% auto 0 auto;
+	padding: 2%;
+	border-radius: 5px;
+	background-color: rgb(241, 241, 241);
+
+	input, textarea{
+		margin: 0 0 2% 0;
+		padding: 2%;
+		font-size: 2rem;
+		resize: none;
+	}
+
+	button{
+		padding: 2%;
+		font-size: 2rem;
+		background-color: rgb(255, 255, 255);
+	}
+
+	button:hover{
+		cursor: pointer;
+		opacity: 0.8;
+	}
+
+} //end contact
 
 footer{
 	width: 91%;
