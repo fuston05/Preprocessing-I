@@ -136,6 +136,14 @@ body {
   height: 100%;
   font-size: 62.5%;
 }
+.flexCol {
+  display: flex;
+  flex-direction: column;
+}
+.flexBetween {
+  display: flex;
+  justify-content: space-between;
+}
 p {
   font-size: 2rem;
   color: #666;
