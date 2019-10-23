@@ -58,7 +58,8 @@ html, body {
 	font-size: 62.5%;
 }
 
-// ////////// variables ///////////
+// //////////////////// variables /////////////////
+// ////////////////////////////////////////////////
 
 @fontColor: darkgray;
 @aHoverColor: lightgray;
@@ -73,7 +74,9 @@ html, body {
 	justify-content: space-between;
 }
 
-//  //////// fonts /////////////////
+//  //////////////////// fonts ////////////////////
+// ////////////////////////////////////////////////
+
 p{
 	font-size: 2rem;
 	color: #666;
@@ -130,7 +133,6 @@ header{
 				text-align: center;
 				border-top: 1px solid #999;
 			}
-
 		}// end a
 
 		a:last-child{
@@ -141,14 +143,16 @@ header{
 
 		a:hover{
 			color: @aHoverColor;
+
 			@media (max-width: 500px){
 				background-color: #eee;
 				color: #777;
 			}
-
 		} // end a:hover
 	}// end nav
 }// end header
+
+// ///////////////////////////////
 
 .intro{
 	padding: 2%;
@@ -159,7 +163,7 @@ header{
 		padding: 5% 2% 3% 2%;
 		width: 95%;
 		margin: 0 auto;
-		background-color: lightgray;
+		background-color: @aHoverColor;
 		border-radius: 5px;
 
 		div:first-child{
@@ -176,7 +180,6 @@ header{
 					display: none;
 				}
 			} //end img
-
 		} // end div first-child
 
 		div:nth-child(2){
@@ -195,12 +198,14 @@ header{
 				padding: 1% 3%;
 				border-radius: 5px;
 				color: #eee;
-				background-color: darkgray;
+				background-color: @fontColor;
 
 				@media (max-width: 500px){
 					width: 80%;
 					margin: 2% auto;
 					padding: 3% 4%;
+					color: #777;
+					background-color: #eee;
 				}
 			} // end button
 
@@ -209,9 +214,10 @@ header{
 				opacity: 0.8;
 			}
 		} //end nth-child
-
 	} // end introCont
 } //end intro
+
+// ///////////////////////////////
 
 .info{
 	width: 91%;
@@ -234,7 +240,6 @@ header{
 			width: 100%;
 			margin: 5% 0;
 		}
-
 	} //end text
 
 	.boxes{
@@ -260,9 +265,10 @@ header{
 			border-bottom: 1px solid #999;
 			color: @fontColor;
 		}
-
 	} //end boxes
 } // end info
+
+// ///////////////////////////////////
 
 .history{
 	width: 91%;
@@ -282,7 +288,7 @@ header{
 		}
 
 		tr:nth-child(even){
-			background-color: lightgray;
+			background-color: @aHoverColor;
 		} //end tr:nth
 
 		tr{
@@ -296,10 +302,11 @@ header{
 			th{
 				font-weight: bold;
 			} //end th
-
 		} //end tr
 	} //end table
 } // end history
+
+// /////////////////////////////////
 
 .contact{
 	.flexCol();
@@ -332,8 +339,9 @@ header{
 		cursor: pointer;
 		opacity: 0.8;
 	}
-
 } //end contact
+
+// //////////////////////////////////
 
 footer{
 	width: 91%;
@@ -349,7 +357,5 @@ footer{
 	p{
 		color: #eee;
 	}
-	
-
 }// end footer
 

@@ -269,6 +269,8 @@ header nav a:hover {
     width: 80%;
     margin: 2% auto;
     padding: 3% 4%;
+    color: #777;
+    background-color: #eee;
   }
 }
 .intro .introCont div:nth-child(2) button:hover {
