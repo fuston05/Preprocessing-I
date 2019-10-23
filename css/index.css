@@ -152,19 +152,20 @@ h4 {
 }
 header {
   padding-top: 2%;
-  width: 95%;
+  width: 91%;
   display: flex;
   justify-content: flex-end;
 }
 header nav {
   width: 40%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 header nav a {
   text-decoration: none;
-  padding: 10px;
+  padding: 2% 0;
   font-size: 2rem;
+  margin-left: 2%;
   color: darkgray;
 }
 header nav a:hover {
